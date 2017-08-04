@@ -10,5 +10,17 @@
 	<h1 id="title">MaidToClean</h1>
 	<p>Paragraph</p>
 
+<<<<<<< HEAD
 </body>
 </html>
+=======
+<HEAD>
+</HEAD>
+
+<BODY>
+hello World :/
+
+</BODY>
+
+</HTML>
+>>>>>>> 4a0de581550806aab58248a200789942afd37ecd
