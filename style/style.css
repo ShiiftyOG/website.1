@@ -1,6 +1,16 @@
 /* Main style for phone and PC */
 
 body {
-	background-image: url("imgs/");/* low, high */
-	
+	background-image: url("imgs/flowers_low.jpg"), url("imgs/flowers.jpg");/* low, high */
+	text-align: center;
+	/* filter:blur(); /* for blur parralax effect with JavaScript when implemented*/
+}
+
+#debug { /* Debug DOM element for recognising between mobi.css and pc.css */
+	position: absolute;
+	top:0;
+	left:0;
+	width: 20px;
+	height:20px;
+	background-color: white; /* white to see if the other css files cascade over */
 }
