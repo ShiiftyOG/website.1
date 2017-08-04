@@ -1,6 +1,7 @@
 /* Main style for phone and PC */
 
 body {
-	background-image: url("imgs/");/* low, high */
-	
+	background-image: url("imgs/flowers.jpg");/* low, high */
+	text-align: center;
+	/* filter:blur() */;
 }
