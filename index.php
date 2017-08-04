@@ -13,18 +13,3 @@
 	<p>Paragraph</p>
 
 </body>
-<<<<<<< HEAD
-</html>
-=======
-</html>
-=======
-<HEAD>
-</HEAD>
-
-<BODY>
-hello World :/
-</BODY>
-
-</HTML>
->>>>>>> 4a0de581550806aab58248a200789942afd37ecd
->>>>>>> 2ad03efde980122cba239469b4172462cfd0873d
