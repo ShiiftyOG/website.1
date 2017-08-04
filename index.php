@@ -3,8 +3,8 @@
 <html>
 	<head>
 		<title>MaidToClean</title>
-		<script type="text/javascript" href="loader.js"></script>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/loader.css">
 		<link rel="stylesheet" type="text/css" href="style/mobi.css" media="screen and (max-aspect-ratio: 1/1), screen and (aspect-ratio: 1/1)">
 		<link rel="stylesheet" type="text/css" href="style/pc.css" media="screen and (min-aspect-ratio: 1/1)">
 	</head>
@@ -16,7 +16,14 @@
 		<div id="loader">
 			<!-- This is for when the website loads. This then turns invisable after load -->
 			<h1>This site is loading</h1>
-			<div id="fidget"></div>
+			<div id="fishSpace">
+				<!-- This is for the orbs or fish or something to spawn -->
+			</div>
+			<script type="text/javascript" src="loader.js"></script>
+			<script type="text/javascript">
+				genFish(40); 	//Now we await WebAssembly in order to be able to have 1000 fish @ 60fps 4k.
+				tick();			//Tick once to get random positions
+			</script>
 		</div>
 
 		<div id="mainWrapper">
@@ -25,7 +32,7 @@
 				<h1>MaidToClean</h1>
 			</div>
 
-			<!-- The logo for the website -->
+			<!-- The logo for the website. Also remember to add alt -->
 			<img src="style/imgs/logo.bmp" alt="">
 
 			<!-- Self explanatory -->
