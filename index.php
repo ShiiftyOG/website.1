@@ -6,7 +6,6 @@
 
 <BODY>
 hello World :/
-
 </BODY>
 
 </HTML>
