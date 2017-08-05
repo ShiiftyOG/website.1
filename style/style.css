@@ -1,7 +1,7 @@
 /* Main style for mobile and PC */
 
 body {
-	background-image: url("imgs/flowers_low.jpg"), url("imgs/flowers.jpg");/* low, high. Now that I think about this, its not a good solution */
+	background-image: url("imgs/background.png"); /*need to change to jpg */
 	text-align: center;
 	/* filter:blur(); /* for blur parralax effect with JavaScript when implemented*/
 }

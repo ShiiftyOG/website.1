@@ -1,5 +1,5 @@
 <?php require_once("config.php"); //Get config file ?><!DOCTYPE html>
-<!-- Add infomation about encoding here. Browsers are angry that we don't do this (TRY USE UTF-8!) -->
+<meta charset="UTF-8"> 
 <html>
 	<head>
 		<title><?php echo $title;?></title>
