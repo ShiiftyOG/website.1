@@ -15,13 +15,35 @@ body {
 	background-image: url("https://static.pexels.com/photos/101472/pexels-photo-101472.jpeg"); 
 	background-size: cover;
 	text-align: center;
-	/* filter:blur(); /* for blur parralax effect with JavaScript when implemented*/
 }
+
+#popOutWrapper {
+	display: table;
+	margin: 0 auto;
+}
+
+#popOut{
+	/* Position */
+	position: relative;
+
+	/* Look */
+	background-color: white;
+	border: 1px solid #111;
+
+	/* Shape */
+	padding: 20px;
+	border-radius: 5px;
+	align-self: center;
+}
+
 
 #mainWrapper {
 	/* Shape and look */
 	background-image: url("imgs/background.png"); /* need to change to jpg */
 	background-size: cover;
+	
+	border-radius: 5px;
+	border: 1px solid #111;
 }
 
 #debug { /* Debug DOM element for recognising between mobi.css and pc.css */

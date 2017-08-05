@@ -1,6 +1,12 @@
 <?php 
 //PHP config file. Feel free to edit the varables.
 
+//Debug features on?
+$debug = True;
+
+//Logo size in pixels
+$size = "200";
+
 //Loading message
 $loadingMessage = "Website is loading";
 
