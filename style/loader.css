@@ -23,8 +23,9 @@
 	position: fixed;
 
 	/* Shape and look */
-	width:20px;
-	height: 20px;
+	width: 20px;
+	height:20px;
+	border-radius: 50px;
 
 	/* Animation */
 	transition: top 2s, left 2s, background-color 2s;

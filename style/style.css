@@ -1,15 +1,36 @@
 /* Main style for mobile and PC */
 
+/*Syntax for all:
+
+#element {
+	/* Position *//*
+	/* Shape and look *//*
+	/* Animation *//*
+}
+
+*/
+
 body {
-	background-image: url("imgs/background.png"); /*need to change to jpg */
+	/* Shape and look */
+	background-image: url("https://static.pexels.com/photos/101472/pexels-photo-101472.jpeg"); 
+	background-size: cover;
 	text-align: center;
 	/* filter:blur(); /* for blur parralax effect with JavaScript when implemented*/
 }
 
+#mainWrapper {
+	/* Shape and look */
+	background-image: url("imgs/background.png"); /* need to change to jpg */
+	background-size: cover;
+}
+
 #debug { /* Debug DOM element for recognising between mobi.css and pc.css */
+	/* Position */
 	position: absolute;
 	top:0;
 	left:0;
+
+	/* Shape and look */
 	width: 20px;
 	height:20px;
 	background-color: white; /* white to see if the other css files cascade over */

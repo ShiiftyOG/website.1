@@ -1,5 +1,5 @@
 <?php require_once("config.php"); //Get config file ?><!DOCTYPE html>
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 <html>
 	<head>
 		<title><?php echo $title;?></title>
@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="style/mobi.css" media="screen and (max-aspect-ratio: 1/1), screen and (aspect-ratio: 1/1)">
 		<link rel="stylesheet" type="text/css" href="style/pc.css" media="screen and (min-aspect-ratio: 1/1)">
 	</head>
-	<body onload="">
+	<body onload="setTimeout(function(){remove();}, 3500);" z-index=0>
 
 		<div id="debug"><!-- Debug won't be here in final version --></div>
 
@@ -27,13 +27,15 @@
 		</div>
 
 		<div id="mainWrapper">
+			<!-- Start of picture. Has to pop out slightly out top-->
+			<div id="popOut">
+				<img src="style/imgs/logo.bmp" alt="<?php echo $title;?>" width="400px" height="400px">
+			</div>
+
 			<!-- Start of main content -->
 			<div class="spanWrapper">
 				<h1><?php echo $title;?></h1>
 			</div>
-
-			<!-- The logo for the website. Also remember to add alt -->
-			<img src="style/imgs/logo.bmp" alt="<?php echo $title;?>">
 
 			<!-- Self explanatory -->
 			<div class="spanWrapper">
@@ -52,7 +54,7 @@
 
 			<!-- Self explanatory -->
 			<div id="footer">
-				<h6>Copyright <?php echo date("Y");?><br></h6>
+				<h6>Copyright <?php echo date("Y");?></h6>
 			</div>
 
 		</div>
