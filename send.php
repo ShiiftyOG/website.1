@@ -1,0 +1,1 @@
+<?php exec ("python3 email_send " + $_POST);?>
