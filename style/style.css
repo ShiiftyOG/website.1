@@ -14,6 +14,7 @@ body {
 	/* Shape and look */
 	background-image: url("https://static.pexels.com/photos/101472/pexels-photo-101472.jpeg"); 
 	background-size: cover;
+	background-position: bottom;
 	text-align: center;
 }
 
@@ -44,6 +45,9 @@ body {
 	
 	border-radius: 5px;
 	border: 1px solid #111;
+
+	margin:30px;
+	padding:30px;
 }
 
 #debug { /* Debug DOM element for recognising between mobi.css and pc.css */
@@ -56,4 +60,17 @@ body {
 	width: 20px;
 	height:20px;
 	background-color: white; /* white to see if the other css files cascade over */
+}
+
+div.spanWrapper {
+	/* Position */
+	text-align: left;
+
+	/* Shape and look */
+	border-top: 1px dashed #111;
+}
+
+div.spanWrapper h1 {
+	/* Position */
+	text-align: center;
 }

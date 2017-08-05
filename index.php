@@ -33,7 +33,7 @@ if ($debug) {
 			</script>
 		</div>
 
-		<div id="preWrapper" style="height:<?php echo ($size/2);?>px;"><!-- Size --></div>
+		<div id="preWrapper" style="height:<?php echo ($size*0);?>px;"><!-- Size --></div>
 
 		<div id="popOutWrapper">
 			<div id="popOut" style="top:<?php echo ($size/2);?>px;">
@@ -55,13 +55,13 @@ if ($debug) {
 			</div>
 
 			<!-- Self explanatory -->
-			<div class="spanWrapper">
+			<div class="spanWrapper" id="aboutUs">
 				<h3>About us</h3>
 				<p><?php echo $aboutUs;?></p>
 			</div>
 
 			<!-- Self explanatory -->
-			<div class="spawWrapper">
+			<div class="spanWrapper">
 				<h3>Contact us</h3>
 				<form action="send.php" method="POST" id="contactForm">
 					<h4>Message:</h4><br>
