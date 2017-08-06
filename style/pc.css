@@ -3,3 +3,26 @@
 #debug {
 	background-color: blue;
 }
+
+#bottom {
+
+}
+
+div#bottom div {
+	width:49%;
+	display:inline-block;
+	float:left;
+}
+
+#bottom::after {
+ 	content: " ";
+   	display: block; 
+   	height: 0; 
+   	clear: both;
+}
+
+#middle {
+	width:1%;
+	height: 100%;
+	border: 1px dashed #111;
+}

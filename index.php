@@ -15,7 +15,7 @@ if ($debug) {
 		<link rel="stylesheet" type="text/css" href="style/pc.css" media="screen and (min-aspect-ratio: 1/1)">
 		<script type="text/javascript" src="main.js"></script>
 	</head>
-	<body onload="setTimeout(function(){remove();}, 3500);" z-index=0>
+	<body onload="start();" z-index=0>
 
 		<?php if ($debug) echo '<div id="debug"><!-- Debug wont be here in final version --></div>'; ?>
 
@@ -61,13 +61,21 @@ if ($debug) {
 			</div>
 
 			<!-- Self explanatory -->
-			<div class="spanWrapper">
-				<h3>Contact us</h3>
-				<form action="send.php" method="POST" id="contactForm">
-					<h4>Message:</h4><br>
-					<textarea name="message" rows="10" cols="30"></textarea><br>
-					<input type="button" value="Send" >
-				</form>
+			<div id="bottom">
+				<div class="spanWrapper">
+					<h3>Contact us</h3>
+					<form action="send.php" method="POST" id="contactForm">
+						<h4>Message:</h4><br>
+						<textarea name="message" rows="10" cols="30"></textarea><br>
+						<input type="button" value="Send" >
+					</form>
+				</div>
+
+				<div class="middle"></div>
+
+				<div class="spanWrapper">
+					<h3>Extra Space</h3>
+				</div>
 			</div>
 
 			<!-- Self explanatory -->
@@ -76,5 +84,6 @@ if ($debug) {
 			</div>
 
 		</div>
+
 	</body>
 </html>
