@@ -37,7 +37,7 @@ if ($debug) {
 
 		<div id="popOutWrapper">
 			<div id="popOut" style="top:<?php echo ($size/2);?>px;">
-				<img id="logo" src="style/imgs/logo.jpg" alt="<?php echo $title;?>" width="<?php echo $size;?>px" height="<?php echo $size;?>px">
+				<img id="logo" src="style/imgs/logo.jpg" alt="<?php echo $title;?>" width="<?php echo $size;?>px" height="<?php echo $size;?>px" style="opacity: 0;">
 				<script type="text/javascript">
 					document.getElementById("popOut").style.width = document.getElementById("logo").width.toString() + "px";
 				</script>
@@ -57,12 +57,12 @@ if ($debug) {
 			<!-- Self explanatory -->
 			<div class="spanWrapper" id="aboutUs">
 				<h3>About us</h3>
-				<p><?php echo $aboutUs;?></p>
+				<p><?php echo $aboutUs;?></p><br>
 			</div>
 
 			<!-- Self explanatory -->
 			<div id="bottom">
-				<div class="spanWrapper">
+				<div class="spanWrapper" id="contact">
 					<h3>Contact us</h3>
 					<form action="send.php" method="POST" id="contactForm">
 						<h4>Message:</h4><br>
@@ -71,9 +71,7 @@ if ($debug) {
 					</form>
 				</div>
 
-				<div class="middle"></div>
-
-				<div class="spanWrapper">
+				<div class="spanWrapper" id="extra">
 					<h3>Extra Space</h3>
 				</div>
 			</div>

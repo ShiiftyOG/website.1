@@ -7,8 +7,6 @@ var amount = 40;			//How many fish??
 function remove() {
 	//Removes the loading element
 	document.getElementById(loaderID).style.opacity = 0; 	//Set opacity to 0.
-	document.getElementById(loaderID).style.zIndex = -999;  //Make sure the element is sent right to the very back of the document.
-	document.getElementById(fhSwn).innerHTML = ""; 			//Clear any fish in the sea
 	amount = 0;												//No fish left (will stop cycle)
 }
 

@@ -4,12 +4,12 @@
 	background-color: blue;
 }
 
-#bottom {
-
+#extra {
+	padding-left: 20px;
 }
 
 div#bottom div {
-	width:49%;
+	width: calc(50% - 20px);
 	display:inline-block;
 	float:left;
 }
@@ -19,10 +19,4 @@ div#bottom div {
    	display: block; 
    	height: 0; 
    	clear: both;
-}
-
-#middle {
-	width:1%;
-	height: 100%;
-	border: 1px dashed #111;
 }

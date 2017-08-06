@@ -29,10 +29,12 @@ body {
 
 	/* Look */
 	background-color: white;
+	background-image: url("imgs/logo.jpg");
+	background-size: contain;
 	border: 1px solid #111;
+	overflow: hidden;
 
 	/* Shape */
-	padding: 20px;
 	border-radius: 5px;
 	align-self: center;
 }
@@ -40,7 +42,7 @@ body {
 
 #mainWrapper {
 	/* Shape and look */
-	background-image: url("imgs/background.png"); /* need to change to jpg */
+	background-image: url("imgs/background_jpg.jpg");
 	background-size: cover;
 	
 	border-radius: 5px;
@@ -67,7 +69,7 @@ div.spanWrapper {
 	text-align: left;
 
 	/* Shape and look */
-	border-top: 1px dashed #111;
+	border-top: 1px solid #aaa;
 }
 
 div.spanWrapper h1 {

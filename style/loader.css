@@ -7,7 +7,7 @@
 	left:0;
 	bottom:0;
 	right:0;
-	widows: 100%;
+	width: 100%;
 	height: 100%;
 
 	/* Shape and look */
@@ -16,6 +16,8 @@
 
 	/* Animation */
 	transition: opacity 2s;
+
+	pointer-events: none;
 }
 
 .fish {
@@ -28,5 +30,5 @@
 	border-radius: 50px;
 
 	/* Animation */
-	transition: top 2s, left 2s, background-color 2s;
+	transition: top 2s, left 2s, background-color 2s, opacity 2s;
 }
