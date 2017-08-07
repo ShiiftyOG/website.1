@@ -17,7 +17,7 @@ if ($system == "windows") {
 	//you're fucked
 }
 
-$cmd = "$python"."$file '".$_POST['message']."' '".$_POST['email']."' '$yourGmail' '$yourPassword'";
+$cmd = "$python"."$file '".$_POST['message']."' '".$_POST['email']."' '$yourGmail' '$yourPassword' '$sendTo'";
 
 $a = exec($cmd);
 

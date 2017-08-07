@@ -4,6 +4,7 @@
 #argv[2] = email
 #argv[3] = gmailUser
 #argv[4] = gmailPassword
+#argv[5] = recipient
 
 from sys import argv
 s=""
@@ -16,11 +17,12 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-gmailUser = 'username@gmail.com'
-gmailPassword = 'password'
-recipient = 'email@example.co.uk'
+gmailUser = argv[3]
+gmailPassword = argv[4]
+recipient = argv[5]
 
-#TODO: Format the message to the recipient.
+subject = "New message from website."
+message = "Main Message:\n" + argv[1] + "\nSender Email:" + argv[2]
 
 msg = MIMEMultipart()
 msg['From'] = gmailUser

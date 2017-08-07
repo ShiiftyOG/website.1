@@ -21,6 +21,8 @@ $aboutUs ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu e
 
 $contact = "Phone Number: +44 774 555 5534 <br>Email: example@example.com";
 
-$yourGmail = "c3ypt1c@gmail.com";
-$yourPassword = "ThisIsNotMyPasswordFuckYou";
+
+$sendTo = "c3ypt1c@gmail.com"
+$yourGmail = "c3ypt1cBot@gmail.com";
+$yourPassword = "Password";
 ?>
