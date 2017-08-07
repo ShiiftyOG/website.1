@@ -46,6 +46,7 @@ body {
 	/* Shape and look 
 	background-image: url("imgs/background_jpg.jpg");
 	background-size: cover; */
+	background-color: white;
 	
 	border-radius: 5px;
 	border: 1px solid #222;
