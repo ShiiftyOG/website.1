@@ -7,12 +7,17 @@ if ($debug) {
 }
 
 if ($system == "windows") {
-	$python = 'python';
+	$python = 'python ';
 	$file = 'C:/wamp64/www/repo/website.1/email_send.py';
+} elseif ($system == "linux") {
+	$python = '';
+	$file = "email_send.py";
+} else {
+	//you're fucked
 }
 
 $a ="";
-passthru("$python $file", $a);
+passthru("$python$file", $a);
 
 ?><!DOCTYPE html>
 <meta charset="UTF-8">

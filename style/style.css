@@ -11,7 +11,7 @@
 */
 
 body {
-	/* Shape and look */
+	/* Shape and look  */
 	background-image: url("imgs/body_background.jpg"); 
 	background-size: cover;
 	background-position: bottom;
@@ -28,7 +28,6 @@ body {
 #popOut{
 	/* Position */
 	position: relative;
-  	display: flex;
   	justify-content: center;
 
 	/* Look */
@@ -44,9 +43,9 @@ body {
 
 
 #mainWrapper {
-	/* Shape and look */
+	/* Shape and look 
 	background-image: url("imgs/background_jpg.jpg");
-	background-size: cover;
+	background-size: cover; */
 	
 	border-radius: 5px;
 	border: 1px solid #222;
