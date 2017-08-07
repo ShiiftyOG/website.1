@@ -33,11 +33,9 @@ if ($debug) {
 			</script>
 		</div>
 
-		<div id="preWrapper" style="height:<?php echo ($size*0);?>px;"><!-- Size --></div>
-
 		<div id="popOutWrapper">
 			<div id="popOut" style="top:<?php echo ($size/2);?>px;">
-				<img id="logo" src="style/imgs/logo.jpg" alt="<?php echo $title;?>" width="<?php echo $size;?>px" height="<?php echo $size;?>px" style="opacity: 0;">
+				<img id="logo" src="style/imgs/logo.jpg" alt="<?php echo $title;?>" width="<?php echo $size;?>px" height="<?php echo $size;?>px">
 				<script type="text/javascript">
 					document.getElementById("popOut").style.width = document.getElementById("logo").width.toString() + "px";
 				</script>
@@ -65,15 +63,19 @@ if ($debug) {
 				<div class="spanWrapper" id="contact">
 					<h3>Contact us</h3>
 					<form action="send.php" method="POST" id="contactForm">
-						<h4>Message:</h4><br>
-						<textarea name="message" rows="10" cols="30"></textarea><br>
-						<input type="button" value="Send" >
+						<p>Message:</p>
+						<textarea name="message" rows="5"></textarea>
+						<p>Your Email:</p>
+						<input type="text" name="email" rows="1"></textarea><br>
+						<input type="submit" value="Send" >
 					</form>
 				</div>
 
 				<div class="spanWrapper" id="extra">
-					<h3>Extra Space</h3>
+					<h3>Contact Details</h3>
+					<p><?php echo $contact;?></p>
 				</div>
+
 			</div>
 
 			<!-- Self explanatory -->
