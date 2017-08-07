@@ -35,7 +35,7 @@ if ($debug) {
 
 		<div id="popOutWrapper">
 			<div id="popOut" style="top:<?php echo ($size/2);?>px;">
-				<img id="logo" src="style/imgs/logo.jpg" alt="<?php echo $title;?>" width="<?php echo $size;?>px" height="<?php echo $size;?>px">
+				<img id="logo" src="style/imgs/logo.png" alt="<?php echo $title;?>" width="<?php echo $size;?>px" height="<?php echo $size;?>px">
 				<script type="text/javascript">
 					document.getElementById("popOut").style.width = document.getElementById("logo").width.toString() + "px";
 				</script>
