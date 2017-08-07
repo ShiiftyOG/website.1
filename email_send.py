@@ -1,14 +1,20 @@
 #!/usr/bin/env python
-import sys
+#argv[0] = just python things
+#argv[1] = message
+#argv[2] = email
+#argv[3] = gmailUser
+#argv[4] = gmailPassword
 
-print ("this was executed")
+from sys import argv
+s=""
+for x in argv:
+	s+=x+";";
+print ("this was executed, 'argv's were:", s)
 
-"""from sys import argv
+from sys import argv
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
-argv = argv[1:] #Removes the useless "python3" tag
 
 gmailUser = 'username@gmail.com'
 gmailPassword = 'password'
@@ -28,4 +34,4 @@ mailServer.starttls()
 mailServer.ehlo()
 mailServer.login(gmailUser, gmailPassword)
 mailServer.sendmail(gmailUser, recipient, msg.as_string())
-mailServer.close()"""
+mailServer.close()

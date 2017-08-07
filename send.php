@@ -7,6 +7,7 @@ if ($debug) {
 }
 
 if ($system == "windows") {
+	//Configure like this
 	$python = 'python ';
 	$file = 'C:/wamp64/www/repo/website.1/email_send.py';
 } elseif ($system == "linux") {
@@ -16,7 +17,14 @@ if ($system == "windows") {
 	//you're fucked
 }
 
-$a = exec("$python"."$file");
+$cmd = "$python"."$file '".$_POST['message']."' '".$_POST['email']."' '$yourGmail' '$yourPassword'";
+
+$a = exec($cmd);
+
+if ( $a == "" && $system == "linux" ) {
+	exec("dos2unix $file");
+	$a = exec($cmd);
+}
 
 ?><!DOCTYPE html>
 <meta charset="UTF-8">
