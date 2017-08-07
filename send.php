@@ -2,6 +2,22 @@
 
 require_once("config.php"); //Get config file 
 
+if ($debug) {
+	//Code for debug
+}
+
+if ($system == "windows") {
+	$python = 'python ';
+	$file = 'C:/wamp64/www/repo/website.1/email_send.py';
+} elseif ($system == "linux") {
+	$python = './';
+	$file = "email_send.py";
+} else {
+	//you're fucked
+}
+
+$a = exec("$python"."$file");
+
 ?><!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
