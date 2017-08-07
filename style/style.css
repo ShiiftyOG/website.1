@@ -11,10 +11,10 @@
 */
 
 body {
-	/* Shape and look */
+	/* Shape and look 
 	background-image: url("imgs/body_background.jpg"); 
 	background-size: cover;
-	background-position: bottom;
+	background-position: bottom; */
 	text-align: center;
 
 	padding: 3%;
@@ -28,7 +28,6 @@ body {
 #popOut{
 	/* Position */
 	position: relative;
-  	display: flex;
   	justify-content: center;
 
 	/* Look */
