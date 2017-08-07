@@ -1,4 +1,9 @@
-from sys import argv
+#!/usr/bin/env python
+import sys
+
+print ("this was executed")
+
+"""from sys import argv
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -23,4 +28,4 @@ mailServer.starttls()
 mailServer.ehlo()
 mailServer.login(gmailUser, gmailPassword)
 mailServer.sendmail(gmailUser, recipient, msg.as_string())
-mailServer.close()
+mailServer.close()"""

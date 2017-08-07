@@ -63,9 +63,9 @@ if ($debug) {
 				<div class="spanWrapper" id="contact">
 					<h3>Contact us</h3>
 					<form action="send.php" method="POST" id="contactForm">
-						<h4>Message:</h4>
+						<p>Message:</p>
 						<textarea name="message" rows="5"></textarea>
-						<h4>Your Email:</h4>
+						<p>Your Email:</p>
 						<input type="text" name="email" rows="1"></textarea><br>
 						<input type="submit" value="Send" >
 					</form>
@@ -75,6 +75,7 @@ if ($debug) {
 					<h3>Contact Details</h3>
 					<p><?php echo $contact;?></p>
 				</div>
+
 			</div>
 
 			<!-- Self explanatory -->

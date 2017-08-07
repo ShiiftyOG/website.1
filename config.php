@@ -1,6 +1,9 @@
 <?php 
 //PHP config file. Feel free to edit the varables.
 
+$system = "windows";
+//$system = "linux";
+
 //Debug features on?
 $debug = True;
 
