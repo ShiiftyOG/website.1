@@ -28,7 +28,7 @@ div#bottom div {
 @media (max-width: 650px) {
 	div#bottom div {
 		width: initial;
-		display: none;
+		display: initial;
 		float: none;
 	}
 
