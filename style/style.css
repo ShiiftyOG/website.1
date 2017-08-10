@@ -43,9 +43,7 @@ body {
 
 
 #mainWrapper {
-	/* Shape and look 
-	background-image: url("imgs/background_jpg.jpg");
-	background-size: cover; */
+	/* Shape and look */
 	background-color: white;
 	
 	border-radius: 5px;
@@ -53,18 +51,6 @@ body {
 
 	margin:30px;
 	padding:30px;
-}
-
-#debug { /* Debug DOM element for recognising between mobi.css and pc.css */
-	/* Position */
-	position: absolute;
-	top:0;
-	left:0;
-
-	/* Shape and look */
-	width: 20px;
-	height:20px;
-	background-color: white; /* white to see if the other css files cascade over */
 }
 
 #bottom {

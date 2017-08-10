@@ -22,7 +22,7 @@ gmailPassword = argv[4]
 recipient = argv[5]
 
 subject = "New message from website."
-message = "Main Message:\n" + argv[1] + "\nSender Email:" + argv[2]
+message = "Main Message:\n" + argv[1] + "\nSender email or number:" + argv[2]
 
 msg = MIMEMultipart()
 msg['From'] = gmailUser

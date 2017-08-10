@@ -24,3 +24,19 @@ div#bottom div {
    	height: 0; 
    	clear: both;
 }
+
+@media (max-width: 650px) {
+	div#bottom div {
+		width: initial;
+		display: none;
+		float: none;
+	}
+
+	#contact {
+		padding-right: 0px;
+	}
+
+	#extra {
+		padding-left: 0px;
+	}
+}

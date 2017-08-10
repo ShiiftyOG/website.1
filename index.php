@@ -1,11 +1,6 @@
-<?php require_once("config.php"); //Get config file 
-
-if ($debug) {
-	//Code for debug
-}
-
-?><!DOCTYPE html>
+<?php require_once("config.php"); //Get config file?><!DOCTYPE html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <html>
 	<head>
 		<title><?php echo $title;?></title>
@@ -16,8 +11,6 @@ if ($debug) {
 		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body onload="start();" z-index=0>
-
-		<?php if ($debug) echo '<div id="debug"><!-- Debug wont be here in final version --></div>'; ?>
 
 		<div id="loader" style="z-index: 100;">
 			<!-- This is for when the website loads. This then turns invisable after load -->
@@ -36,9 +29,6 @@ if ($debug) {
 		<div id="popOutWrapper">
 			<div id="popOut" style="top:<?php echo ($size/2);?>px;">
 				<img id="logo" src="style/imgs/logo.png" alt="<?php echo $title;?>" width="<?php echo $size;?>px">
-				<script type="text/javascript">
-					document.getElementById("popOut").style.width = document.getElementById("logo").width.toString() + "px";
-				</script>
 			</div>
 		</div>
 
@@ -58,15 +48,16 @@ if ($debug) {
 				<p><?php echo $aboutUs;?></p><br>
 			</div>
 
-			<!-- Self explanatory -->
+			<!-- fill out form to contact plus extra space -->
 			<div id="bottom">
 				<div class="spanWrapper" id="contact">
 					<h3>Contact us</h3>
 					<form action="send.php" method="POST" id="contactForm">
 						<p>Message:</p>
 						<textarea name="message" rows="5"></textarea>
-						<p>Your Email:</p>
+						<p>Your Email or phone number:</p>
 						<input type="text" name="email" rows="1"></textarea><br>
+						<!-- TODO: Made sure that the email/number is valid with at least JS -->
 						<input type="submit" value="Send" >
 					</form>
 				</div>
