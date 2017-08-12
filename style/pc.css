@@ -25,6 +25,9 @@ div#bottom div {
    	clear: both;
 }
 
+
+/* for screens smaller than 650px,
+   remove padding and make more friendly */
 @media (max-width: 650px) {
 	div#bottom div {
 		width: initial;
