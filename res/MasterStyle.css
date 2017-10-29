@@ -1,0 +1,154 @@
+/* This is the main markup sheet */
+/* Fonts are here */ 
+@import "font.css";
+
+/* Main Body Elements */
+
+body {
+	background-color: #ECECEC;
+	color: black;
+	font-family: "Gravity Book";
+	text-align: center;
+	display: inline-block;
+	width: calc(100% - 20px);
+}
+
+div.title {
+	font-family: "Gotham Black";
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+div.mainTitle {
+	font-size: 50px;
+}
+
+div.mainBox {
+	float: none;
+	text-align: inherit;
+	margin: 20px;
+	width: calc(40% - 10px);
+}
+
+div.startFloat {
+	float: inline-start;
+}
+
+div.endFloat {
+	float: inline-end;
+}
+
+div.floaterBox {
+	overflow: hidden;
+}
+
+div.Dash {
+	border-top:1px dashed;
+	border-bottom: 1px dashed;
+}
+
+div.wide {
+	width: calc(100% - 40px);
+	margin: 20px;
+}
+
+div.wordSpan {
+	width:70%;
+	text-align: left;
+	display: inline-block;
+}
+
+/* buttons */
+div.button {
+	display: inline-block;
+	
+	width:15em;
+	height: 3em;
+	padding-top:1em;
+	padding-bottom:1em;
+	
+	cursor:hand;
+	cursor:pointer;
+	transition: all 0.2s;
+
+	font-family: "Gotham Black Italic";
+	text-align: center;
+	text-decoration: none;
+	color: white;
+
+	/* margin: ; */
+
+}
+
+div.button:hover {
+	font-size:120%;
+	text-decoration: underline;
+}
+
+p.buttonText {
+	margin:none;
+	height: 1em;
+}
+
+div.smol {
+	font-size: 75%;
+}
+
+div.smol:hover {
+	font-size: 90%;
+}
+
+/* colors for backgrounds*/
+div.orange {
+	background-color: #FF5A00;
+}
+
+div.orange:hover {
+	background-color: #812E00;
+}
+
+div.blue {
+	background-color: #0078FF;
+}
+
+div.blue:hover {
+	background-color: #00346F;
+}
+
+div.gray {
+	background-color: #414141;
+}
+
+div.gray:hover {
+	background-color: #1A1A1A;
+}
+
+div.green {
+	background-color: #44B617;
+}
+
+div.green:hover {
+	background-color: #173E08;
+}
+
+/* links and extra minour details */
+a, a:visited {
+	color:#00666F;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+a:hover {
+	font-size:115%;
+	text-decoration: blink;
+}
+
+a:active {
+	color: #000000;
+	text-decoration: underline;
+} 
+
+/* Added at the end for overwriting */
+@import "pc.css" max-aspect-ratio:(1/1);
+@import "mobi.css" min-aspect-ratio(1/1), aspect-ration(1/1);
+@import "tablet.css" min-aspect-ratio(1/1) and min-width: 800px;
